@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ticket Booking</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+	body {
+		margin: 0px;
+		padding: 0px;
+		background-image: url("15.jpeg");
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
+		width: 100vw;
+		color: rgba(255, 0, 0, 1.0);
+		font-family: "Audiowide";
+	}
+	
+	.heading {
+		font-size: 30px;
+	}
+	.hr-line {
+		width: 100%;
+		color: white;
+	}
+	.container {
+		background-color: rgba(20, 20, 20, 0.5);
+		height: 100vh;
+	}
+	form {
+		margin-left: 30%;
+	}
+	input {
+		background: rgba(255, 255, 255, 0.7);
+		margin-top: 15px;
+		outline: none;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		border-radius: 20px;
+		box-shadow: 0 3px 10px rgba(144, 238, 144, 1);
+		padding: 5px 0px;
+	}
+	::placeholder {
+		color: black;
+		font-family: "Audiowide";
+	}
+	.input-btn {
+		cursor: pointer;
+		padding:10px 20px;
+		border-radius: 40px;
+		color: red;
+	}
+</style>
+<body>
+	<div class="container">
+	<h1 class="heading" align="center">Book your ticket here</h1>
+	<hr size="10" class="hr-line">
+	<div class="full">
+		<form action = "atm.html" class="myform">
+			<label>
+				First Name:			
+				<input type="text" name="" required>
+			</label>
+			<label>
+				Last Name:
+				<input type="text" name="" required>
+			</label>
+			<br>
+			<label>
+				Gender:
+				<input type="radio" name="Gender">Male
+				<input type="radio" name="Gender">Female
+			</label>
+			<br>
+			<label>
+				Age:
+				<input type="number" name="" required>
+			</label>
+			<br>
+			<label>
+				Enter the Date:
+				<input type="Date" name="" required>
+			</label>
+			<br>
+			<label>
+				<input type="text" name="" placeholder="From" required>
+				<input type="text" name="" placeholder="To" required>
+			</label>
+			<br>
+			<input type="submit" name="" value="Book" align="center" class="input-btn">
+			<input type="button" name="" value="clear" class="input-btn clear" onclick="clearData()">
+		</form>
+	</div>
+	</div>
+	<script type="text/javascript">
+		function clearData() {
+			document.querySelector(".myform").reset();
+		}
+	</script>
+</body>
+</html>
